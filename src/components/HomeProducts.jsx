@@ -27,11 +27,7 @@ export default function HomeProduct() {
           </div>
         ) : (
           products.map((product, index) => (
-            <Link
-              href={`/productdetails?id=${product.id}`}
-              key={index}
-              id={product.id}
-            >
+            <Link href={`/productdetails?id=${product.id}`} key={index}>
               <Product product={product} />
             </Link>
           ))

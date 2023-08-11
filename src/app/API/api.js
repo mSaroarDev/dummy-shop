@@ -19,3 +19,9 @@ export async function getProducts() {
   const data = await res.json();
   return data;
 }
+
+export async function productById(id) {
+  const res = await fetch(baseURL + "/products/" + id);
+  const data = await res.json();
+  return data;
+}
